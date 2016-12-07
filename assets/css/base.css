@@ -26,6 +26,7 @@ th,
 td {
   margin: 0;
   padding: 0;
+  font-family: "Microsoft YaHei";
 }
 body {
   background: #fff;
@@ -61,6 +62,15 @@ var {
 }
 a {
   color: #000;
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
   text-decoration: none;
 }
 img {

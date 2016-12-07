@@ -1,7 +1,7 @@
 /*����*/
 .w {
   margin: 0 auto;
-  width: 1213px;
+  width: 1190px;
 }
 /*��������*/
 .clearfix:after {
@@ -17,4 +17,83 @@
 /*ѡ��������ɫ*/
 .font-current {
   color: #008de8;
+}
+/*�����ֲ���ť������ʽ*/
+.glyphicon-chevron-left:before {
+  content: '<' !important;
+}
+.glyphicon-chevron-right:before {
+  content: '>' !important;
+}
+/*ý����ѯ*/
+/*����Ļ����1226ʱ*/
+@media (min-width: 1226px) {
+  .w {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  /*����Ļ��ʾ������*/
+  .max-hide {
+    display: none!important;
+  }
+  .max-show {
+    display: block!important;
+  }
+}
+/*����Ļ��1081��1199ʱ��Ч��*/
+@media (min-width: 1080px) and (max-width: 1225px) {
+  .w {
+    width: 992px;
+    margin: 0 auto;
+  }
+  /*����Ļ��ʾ������*/
+  .max-hide {
+    display: none!important;
+  }
+  .max-show {
+    display: block!important;
+  }
+}
+/*������Ļ������*/
+@media only screen and (width: 320px) {
+  html,
+  body {
+    font-size: 10.66666667px !important;
+  }
+}
+@media only screen and (width: 360px) {
+  html,
+  body {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (width: 375px) {
+  html,
+  body {
+    font-size: 12.5px !important;
+  }
+}
+@media only screen and (width: 400px) {
+  html,
+  body {
+    font-size: 13.33333333px !important;
+  }
+}
+@media only screen and (width: 414px) {
+  html,
+  body {
+    font-size: 13.8px !important;
+  }
+}
+@media only screen and (width: 411px) {
+  html,
+  body {
+    font-size: 13.7px !important;
+  }
+}
+@media only screen and (width: 435px) {
+  html,
+  body {
+    font-size: 14.5px !important;
+  }
 }

@@ -66,6 +66,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 0px;
 }
 .banner .banner-list .banner-list-w ul li {
   padding: 25px 0px 21px;
@@ -73,15 +74,27 @@
   border-bottom: 4px solid #008de8;
 }
 .banner .banner-first {
-  background: url("../images/banner_bg_1.png") no-repeat center center;
-  background-size: 100%;
+  position: relative;
+}
+.banner .banner-first .bg_1 {
+  background: url("../images/banner_bg_1.png") no-repeat center;
+  width: 100%;
+  height: 614px;
+}
+.banner .banner-first .bg_2 {
+  background: url("../images/banner_bg_1.png") no-repeat center;
+  width: 100%;
+  height: 614px;
 }
 .banner .banner-first .banner-first-bg {
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 157px 0px;
+  height: 614px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0px;
 }
 .banner .banner-first .banner-first-bg .banner-first-w {
   display: flex;
@@ -150,10 +163,9 @@
 }
 .banner .banner-third {
   background: url("../images/banner_bg_2.png") no-repeat center;
-  background-size: 100%;
 }
 .banner .banner-third .banner-third-w {
-  padding: 134px 0px 226px;
+  padding: 134px 0px 213px;
   display: flex;
 }
 .banner .banner-third .banner-third-w .content {
@@ -196,6 +208,7 @@
   font-size: 34px;
   line-height: 51px;
   text-align: center;
+  margin: 0px;
 }
 .main .main-w .list {
   width: 100%;
@@ -206,8 +219,9 @@
 }
 .main .main-w .list ul li {
   height: 390px;
-  width: 400px;
+  width: 390px;
   background-color: #fff;
+  flex: 39;
 }
 .main .main-w .list ul li .had {
   color: #fff;
@@ -222,6 +236,9 @@
   font-size: 16px;
   line-height: 24px;
   padding: 82px 57px 0px;
+}
+.main .main-w .list ul .zhanwei {
+  flex: 2;
 }
 .lastFool .lastFool-w {
   padding-top: 92px;
@@ -289,7 +306,7 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  margin-bottom: 170px;
+  margin-bottom: 70px;
 }
 .register .register-w .submit form .column {
   flex-basis: 100%;
@@ -298,10 +315,16 @@
   position: relative;
 }
 .register .register-w .submit form .column input {
-  width: 360px;
-  height: 45px;
+  width: 418px;
+  height: 46px;
   border: 1px solid #c9caca;
   padding-left: 56px;
+}
+.register .register-w .submit form .column .zhanwei {
+  padding: 0px 20px;
+}
+.register .register-w .submit form .column .comp {
+  position: relative;
 }
 .register .register-w .submit form .column .comp::before {
   display: block;
@@ -314,6 +337,9 @@
   top: 12px;
   left: 12px;
 }
+.register .register-w .submit form .column .name {
+  position: relative;
+}
 .register .register-w .submit form .column .name::before {
   display: block;
   content: '';
@@ -323,7 +349,10 @@
   height: 23px;
   background: url("../images/name_13.png") no-repeat center;
   top: 12px;
-  left: 497px;
+  left: 12px;
+}
+.register .register-w .submit form .column .telephone {
+  position: relative;
 }
 .register .register-w .submit form .column .telephone::before {
   display: block;
@@ -336,6 +365,9 @@
   top: 12px;
   left: 12px;
 }
+.register .register-w .submit form .column .eml {
+  position: relative;
+}
 .register .register-w .submit form .column .eml::before {
   display: block;
   content: '';
@@ -345,7 +377,22 @@
   height: 23px;
   background: url("../images/eml_18.png") no-repeat center;
   top: 12px;
-  left: 497px;
+  left: 12px;
+}
+.register .register-w .submit form .column-last {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44px;
+}
+.register .register-w .submit form .column-last input {
+  width: 508px;
+  height: 56px;
+  border: 1px solid #008de8;
+  color: #008de8;
+  font-size: 18px;
+  background-color: #fff;
 }
 .register .register-w .submit form .space {
   margin-bottom: 44px;
@@ -358,16 +405,20 @@
 .footer .footer-w .list {
   display: flex;
   justify-content: space-between;
-  padding: 127px 147px 100px 280px;
+  padding: 90px 147px 50px 280px;
   border-bottom: 1px solid #5f5f5f;
 }
 .footer .footer-w .list dt {
   color: #fff;
-  margin-bottom: 29px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: normal;
 }
-.footer .footer-w .list dl {
+.footer .footer-w .list dd {
   color: #5f5f5f;
-  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 0px;
 }
 .footer .footer-last {
   display: flex;
@@ -377,3 +428,4 @@
   padding: 20px 0px;
 }
 /*footer����*/
+/*�����ֻ���ý����ѯ��ʼ*/

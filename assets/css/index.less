@@ -56,6 +56,7 @@
   }
 }
 /*头部结束*/
+
 /*banner开始*/
 .banner{
   .banner-list{
@@ -67,6 +68,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin-bottom: 0px;
         li{
           padding: 25px 0px 21px;
           margin-right: 38px;
@@ -76,14 +78,26 @@
     }
   }
   .banner-first{
-    background: url("../images/banner_bg_1.png") no-repeat center center;
-    background-size: 100%;
+    position: relative;
+    .bg_1{
+      background: url("../images/banner_bg_1.png") no-repeat center;
+      width: 100%;
+      height: 614px;
+    }
+    .bg_2{
+      background: url("../images/banner_bg_1.png") no-repeat center;
+      width: 100%;
+      height: 614px;
+    }
     .banner-first-bg{
       background-color: rgba(0,0,0,0.1);
-      padding: 157px 0px;
+      height: 614px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      position: absolute;
+      top: 0px;
       .banner-first-w{
         display: flex;
         align-items: center;
@@ -156,9 +170,8 @@
   }
   .banner-third{
     background: url("../images/banner_bg_2.png") no-repeat center;
-    background-size: 100%;
     .banner-third-w{
-      padding: 134px 0px 226px;
+      padding: 134px 0px 213px;
       display: flex;
       .content{
         flex: 1;
@@ -187,6 +200,7 @@
   }
 }
 /*banner结束*/
+
 /*主页面开始*/
 .main{
   background-color: #f2f2f2;
@@ -202,6 +216,7 @@
         font-size: 34px;
         line-height: 51px;
         text-align: center;
+        margin: 0px;
       }
     }
     .list{
@@ -211,8 +226,9 @@
         justify-content: space-between;
         li{
           height: 390px;
-          width: 400px;
+          width: 390px;
           background-color: #fff;
+          flex: 39;
           .had{
             color: #fff;
             width: 100%;
@@ -227,6 +243,9 @@
             line-height: 24px;
             padding: 82px 57px 0px;
           }
+        }
+        .zhanwei{
+          flex: 2;
         }
       }
     }
@@ -276,6 +295,7 @@
   }
 }
 /*主页面结束*/
+
 /*表单注册开始*/
 .register{
   background-color: #eaeaea;
@@ -301,17 +321,23 @@
          display: flex;
          flex-wrap: wrap;
          align-content: space-between;
-         margin-bottom: 170px;
+         margin-bottom: 70px;
          .column{
            flex-basis: 100%;
            display: flex;
            justify-content: space-between;
            position: relative;
            input{
-             width: 360px;
-             height: 45px;
-             border: 1px solid #c9caca;
-             padding-left: 56px;
+              width: 418px;
+              height: 46px;
+              border: 1px solid #c9caca;
+              padding-left: 56px;
+            }
+           .zhanwei{
+             padding: 0px 20px;
+           }
+           .comp{
+             position: relative;
            }
            .comp::before{
              display: block;
@@ -324,6 +350,9 @@
              top: 12px;
              left: 12px;
            }
+           .name{
+             position: relative;
+           }
            .name::before{
              display: block;
              content: '';
@@ -333,7 +362,10 @@
              height: 23px;
              background: url("../images/name_13.png") no-repeat center;
              top: 12px;
-             left: 497px;
+             left: 12px;
+           }
+           .telephone{
+             position: relative;
            }
            .telephone::before{
              display: block;
@@ -346,6 +378,9 @@
              top: 12px;
              left: 12px;
            }
+           .eml{
+             position: relative;
+           }
            .eml::before{
              display: block;
              content: '';
@@ -355,7 +390,22 @@
              height: 23px;
              background: url("../images/eml_18.png") no-repeat center;
              top: 12px;
-             left: 497px;
+             left: 12px;
+           }
+         }
+         .column-last{
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 44px;
+           input{
+             width: 508px;
+             height: 56px;
+             border: 1px solid #008de8;
+             color: #008de8;
+             font-size: 18px;
+             background-color: #fff;
            }
          }
          .space{
@@ -366,6 +416,7 @@
   }
 }
 /*表单注册结束*/
+
 /*footer开始*/
 .footer{
   background-color: #282828;
@@ -373,15 +424,19 @@
     .list{
       display: flex;
       justify-content: space-between;
-      padding: 127px 147px 100px 280px;
+      padding: 90px 147px 50px 280px;
       border-bottom:1px solid #5f5f5f;
       dt{
         color: #fff;
-         margin-bottom: 29px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: normal;
       }
-      dl{
+      dd{
         color:#5f5f5f;
-        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 0px;
       }
     }
   }
@@ -394,3 +449,514 @@
   }
 }
 /*footer结束*/
+
+
+
+/*适配手机的媒体查询开始*/
+
+//@media (min-width: 768px) and (max-width: 1079px) {
+//  html{
+//    font-size:25px!important;
+//  }
+//  /*版心更改*/
+//  .w {
+//    width: 750px;
+//    margin: 0 auto;
+//  }
+//  /*小屏幕显示及隐藏方法*/
+//  .min-show {
+//    display: block !important;
+//  }
+//
+//  .min-hide {
+//    display: none !important;
+//  }
+//
+//
+//  /*头部开始*/
+//  .header{
+//    .header-w{
+//      display: flex;
+//      justify-content: space-between;
+//      align-items: center;
+//      padding: (15/30)*1rem 0rem;
+//      .min-left{
+//        .logo{
+//          img{
+//            width: (91/30)*1rem;
+//            height: (50/30)*1rem;
+//          }
+//        }
+//      }
+//      .min-right{
+//        display: flex;
+//        justify-content: space-between;
+//        align-items: center;
+//        .header-call{
+//          a{
+//            display: inline-block;
+//            width: (50/30)*1rem;
+//            height: (50/30)*1rem;
+//            background: url("../images/icon_phonecall.png") no-repeat center;
+//            background-size: 100%;
+//          }
+//        }
+//        .line{
+//          width: (2/30)*1rem;
+//          height: (44/30)*1rem;
+//          background-color: #9f9f9f;
+//          margin: 0rem (31/30)*1rem;
+//        }
+//        .header-menu{
+//          display: inline-block;
+//          width: (50/30)*1rem;
+//          height: (50/30)*1rem;
+//          background: url("../images/icon_list.png") no-repeat center;
+//          background-size: 100%;
+//        }
+//      }
+//    }
+//  }
+//  /*头部结束*/
+//
+//  /*banner部分开始*/
+//  .banner{
+//    .banner-second{
+//      .banner-second-w{
+//        display: flex;
+//        flex-direction: column-reverse;
+//        padding: (90/30)*1rem 0rem;
+//        .content{
+//          .title{
+//            h3{
+//              line-height: (72/30)*1rem;
+//              margin-bottom: (28/30)*1rem;
+//            }
+//          }
+//          .describe{
+//            p{
+//              line-height: (38/30)*1rem;
+//            }
+//          }
+//        }
+//      }
+//    }
+//    .banner-third{
+//      .banner-third-w{
+//        padding: (90/30)*1rem 0rem;
+//        display: flex;
+//        .content{
+//          flex: 1;
+//          h3{
+//            line-height: (72/30)*1rem;
+//          }
+//          p{
+//            line-height: (38/30)*1rem;
+//          }
+//        }
+//        .stance{
+//          flex: 1;
+//        }
+//      }
+//    }
+//  }
+//
+//  /*banner部分结束*/
+//
+//  /*主页部分开始*/
+//  .main{
+//    .main-w{
+//      display: flex;
+//      flex-direction: column;
+//      padding: (90/30)*1rem 0rem;
+//      .title{
+//        h3{
+//          line-height: (72/30)*1rem;
+//        }
+//      }
+//      .list{
+//        ul{
+//          display: flex;
+//          flex-direction: column;
+//          li{
+//            flex: 39;
+//            width: 100%;
+//            margin-bottom: (90/30)*1rem;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .lastFool{
+//    .lastFool-w{
+//      display: flex;
+//      flex-direction: column;
+//      padding: (90/30)*1rem 0rem;
+//      .content{
+//        .img{
+//          display: flex;
+//          flex-direction: column;
+//          align-items: center;
+//          justify-content: center;
+//          img{
+//            margin: 0rem;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  /*主页部分结束*/
+//  /*表单注册部分开始*/
+//  .register{
+//    .register-w{
+//      display: flex;
+//      flex-direction: column;
+//      padding: (90/30)*1rem 0rem;
+//      .content{
+//        .title{
+//          line-height: (72/30)*1rem;
+//        }
+//        p{
+//          line-height: (38/30)*1rem;
+//        }
+//      }
+//      .submit{
+//        form{
+//          display: flex;
+//          flex-direction: column;
+//          margin: 0rem;
+//          .column{
+//            display: flex;
+//            flex-direction: column;
+//            margin: 0rem;
+//            input{
+//              height: (90/30)*1rem;
+//              width: (640/30)*1rem;
+//              font-size: (20/30)*1rem;
+//              padding-left: (114/30)*1rem;
+//            }
+//            .comp{
+//              margin-bottom: (90/30)*1rem;
+//            }
+//            .comp::before{
+//              display: block;
+//              content: '';
+//              position: absolute;
+//              z-index: 666;
+//              width: (60/30)*1rem;
+//              height: (60/30)*1rem;
+//              background: url("../images/comp_phone_03.png") no-repeat center;
+//              top: 12px;
+//              left: 17px;
+//            }
+//            .name{
+//              margin-bottom: (90/30)*1rem;
+//            }
+//            .name::before{
+//              display: block;
+//              content: '';
+//              position: absolute;
+//              z-index: 666;
+//              width: (80/30)*1rem;
+//              height: (80/30)*1rem;
+//              background: url("../images/people_phone_06.png") no-repeat center;
+//              top: 4px;
+//              left: 12px;
+//            }
+//            .telephone{
+//              margin-bottom: (90/30)*1rem;
+//            }
+//            .telephone::before{
+//              display: block;
+//              content: '';
+//              position: absolute;
+//              z-index: 666;
+//              width: (80/30)*1rem;
+//              height: (80/30)*1rem;
+//              background: url("../images/phone_phone_08.png") no-repeat center;
+//              top: 4px;
+//              left: 12px;
+//            }
+//            .eml{
+//              margin-bottom: (90/30)*1rem;
+//            }
+//            .eml::before{
+//              display: block;
+//              content: '';
+//              position: absolute;
+//              z-index: 666;
+//              width: (80/30)*1rem;
+//              height: (80/30)*1rem;
+//              background: url("../images/eml_phone_10.png") no-repeat center;
+//              top: 4px;
+//              left: 12px;
+//            }
+//          }
+//          .column-last{
+//            margin: 0rem;
+//            input{
+//              width: (640/30)*1rem;
+//              height: (110/30)*1rem;
+//            }
+//          }
+//        }
+//      }
+//    }
+//  }
+//  /*表单注册部分结束*/
+//}
+
+
+
+//@media (max-width: 767px) {
+//  html{
+//    font-size:25px!important;
+//  }
+//  /*版心更改*/
+//  .w {
+//    //width: 90%;
+//    margin: 0 auto;
+//  }
+//  /*小屏幕显示及隐藏方法*/
+//  .min-show {
+//    display: block !important;
+//  }
+//
+//  .min-hide {
+//    display: none !important;
+//  }
+//
+//
+//  /*头部开始*/
+//  .header{
+//    .header-w{
+//      display: flex;
+//      justify-content: space-between;
+//      align-items: center;
+//      padding: (15/30)*1rem 0rem;
+//      .min-left{
+//        .logo{
+//          img{
+//            width: (91/30)*1rem;
+//            height: (50/30)*1rem;
+//          }
+//        }
+//      }
+//      .min-right{
+//        display: flex;
+//        justify-content: space-between;
+//        align-items: center;
+//        .header-call{
+//          a{
+//            display: inline-block;
+//            width: (50/30)*1rem;
+//            height: (50/30)*1rem;
+//            background: url("../images/icon_phonecall.png") no-repeat center;
+//            background-size: 100%;
+//          }
+//        }
+//        .line{
+//          width: (2/30)*1rem;
+//          height: (44/30)*1rem;
+//          background-color: #9f9f9f;
+//          margin: 0rem (31/30)*1rem;
+//        }
+//        .header-menu{
+//          display: inline-block;
+//          width: (50/30)*1rem;
+//          height: (50/30)*1rem;
+//          background: url("../images/icon_list.png") no-repeat center;
+//          background-size: 100%;
+//        }
+//      }
+//    }
+//  }
+//  /*头部结束*/
+//
+//  /*banner部分开始*/
+//  .banner{
+//    .banner-second{
+//      .banner-second-w{
+//        display: flex;
+//        flex-direction: column-reverse;
+//        padding: (90/30)*1rem 0rem;
+//        .content{
+//          .title{
+//            h3{
+//              line-height: (72/30)*1rem;
+//              margin-bottom: (28/30)*1rem;
+//            }
+//          }
+//          .describe{
+//            p{
+//              line-height: (38/30)*1rem;
+//            }
+//          }
+//        }
+//      }
+//    }
+//    .banner-third{
+//      .banner-third-w{
+//        padding: (90/30)*1rem 0rem;
+//        display: flex;
+//        .content{
+//          flex: 1;
+//          h3{
+//            line-height: (72/30)*1rem;
+//          }
+//          p{
+//            line-height: (38/30)*1rem;
+//          }
+//        }
+//        .stance{
+//          flex: 1;
+//        }
+//      }
+//    }
+//  }
+//
+//  /*banner部分结束*/
+//
+//  /*主页部分开始*/
+//  .main{
+//    .main-w{
+//      display: flex;
+//      flex-direction: column;
+//      padding: (90/30)*1rem 0rem;
+//      .title{
+//        h3{
+//          line-height: (72/30)*1rem;
+//        }
+//      }
+//      .list{
+//        ul{
+//          display: flex;
+//          flex-direction: column;
+//          li{
+//            flex: 39;
+//            width: 100%;
+//            margin-bottom: (90/30)*1rem;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  .lastFool{
+//    .lastFool-w{
+//      display: flex;
+//      flex-direction: column;
+//      padding: (90/30)*1rem 0rem;
+//      .content{
+//        .img{
+//          display: flex;
+//          flex-direction: column;
+//          align-items: center;
+//          justify-content: center;
+//          img{
+//            margin: 0rem;
+//          }
+//        }
+//      }
+//    }
+//  }
+//  /*主页部分结束*/
+//  /*表单注册部分开始*/
+//  .register{
+//    .register-w{
+//      display: flex;
+//      flex-direction: column;
+//      padding: (90/30)*1rem 0rem;
+//      .content{
+//        .title{
+//          line-height: (72/30)*1rem;
+//        }
+//        p{
+//          line-height: (38/30)*1rem;
+//        }
+//      }
+//      .submit{
+//        form{
+//          display: flex;
+//          flex-direction: column;
+//          margin: 0rem;
+//          .column{
+//            display: flex;
+//            flex-direction: column;
+//            margin: 0rem;
+//            input{
+//              height: (90/30)*1rem;
+//              width: (640/30)*1rem;
+//              font-size: (20/30)*1rem;
+//              padding-left: (114/30)*1rem;
+//            }
+//            .comp{
+//              margin-bottom: (90/30)*1rem;
+//            }
+//            .comp::before{
+//              display: block;
+//              content: '';
+//              position: absolute;
+//              z-index: 666;
+//              width: (60/30)*1rem;
+//              height: (60/30)*1rem;
+//              background: url("../images/comp_phone_03.png") no-repeat center;
+//              top: 12px;
+//              left: 17px;
+//            }
+//            .name{
+//              margin-bottom: (90/30)*1rem;
+//            }
+//            .name::before{
+//              display: block;
+//              content: '';
+//              position: absolute;
+//              z-index: 666;
+//              width: (80/30)*1rem;
+//              height: (80/30)*1rem;
+//              background: url("../images/people_phone_06.png") no-repeat center;
+//              top: 4px;
+//              left: 12px;
+//            }
+//            .telephone{
+//              margin-bottom: (90/30)*1rem;
+//            }
+//            .telephone::before{
+//              display: block;
+//              content: '';
+//              position: absolute;
+//              z-index: 666;
+//              width: (80/30)*1rem;
+//              height: (80/30)*1rem;
+//              background: url("../images/phone_phone_08.png") no-repeat center;
+//              top: 4px;
+//              left: 12px;
+//            }
+//            .eml{
+//              margin-bottom: (90/30)*1rem;
+//            }
+//            .eml::before{
+//              display: block;
+//              content: '';
+//              position: absolute;
+//              z-index: 666;
+//              width: (80/30)*1rem;
+//              height: (80/30)*1rem;
+//              background: url("../images/eml_phone_10.png") no-repeat center;
+//              top: 4px;
+//              left: 12px;
+//            }
+//          }
+//          .column-last{
+//            margin: 0rem;
+//            input{
+//              width: (640/30)*1rem;
+//              height: (110/30)*1rem;
+//            }
+//          }
+//        }
+//      }
+//    }
+//  }
+//  /*表单注册部分结束*/
+//
+//}

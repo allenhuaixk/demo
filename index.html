@@ -2,17 +2,19 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title>硬核狗</title>
+    <link rel="stylesheet" href="vendors/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/base.css"/>
     <link rel="stylesheet" href="assets/css/common.css"/>
     <link rel="stylesheet" href="assets/css/index.css"/>
-    <script src="./vendors/less.js"></script>
 </head>
 <body>
 <!--头部开始-->
     <div class="header">
         <div class="header-w w">
-            <div class="header-left">
+            <div class="header-left  min-hide">
                 <div class="logo">
                     <a href="#">
                         <img src="./assets/images/logo@2x.png" alt="logo"/>
@@ -21,16 +23,33 @@
                 <div class="line"></div>
                 <div class="buyplace"><a href="javascript:void (0)">营销平台</a></div>
             </div>
-            <div class="header-right">
+            <div class="header-right  min-hide">
                 <input class="btn-login" type="button" value="登录投放管理平台"/>
                 <input class="btn-reg" type="button" value="注册"/>
             </div>
+            <!--小屏时候的效果开始-->
+            <div class="min-left max-hide">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/images/logo@2x.png" alt="logo"/>
+                    </a>
+                </div>
+            </div>
+            <div class="min-right max-hide">
+                <div id="call" class="header-call">
+                    <a href=tel://400-000-7785></a>
+                </div>
+                <span class="line"></span>
+                <div id="more" class="header-menu">
+                </div>
+            </div>
+            <!--小屏时候的效果结束-->
         </div>
     </div>
 <!--头部结束-->
 <!--banner开始-->
     <div class="banner">
-        <div class="banner-list">
+        <div class="banner-list min-hide">
             <div class="banner-list-w w">
                 <ul>
                     <li><a class="font-current" href="javascript:void (0)">平台概况</a></li>
@@ -43,6 +62,38 @@
             </div>
         </div>
         <div class="banner-first">
+            <!--bootstrap 轮播插件开始-->
+            <div id="carousel-example-generic" class="carousel slide banner-first" data-ride="carousel">
+                <!-- Indicators 小圆点-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides 轮播部分-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="bg_1" ></div>
+                        <!--<img class="" src="" alt="...">-->
+                    </div>
+                    <div class="item">
+                        <div class="bg_2" ></div>
+                        <!--<img class="" src="" alt="...">-->
+                    </div>
+                </div>
+
+                <!-- Controls 点击按钮控制器-->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="z-index: 666;">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="z-index: 666">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--bootstrap 轮播插件结束-->
+            <!--轮播部分的上层背景开始-->
             <div class="banner-first-bg">
                 <div class="banner-first-w w">
                     <div class="content">
@@ -53,9 +104,11 @@
                     </div>
                 </div>
             </div>
+            <!--轮播部分的上层背景结束-->
         </div>
         <div class="banner-second">
             <div class="banner-second-w w">
+
                 <div class="pic">
                     <img class="mac-pic " src="./assets/images/mac_pic_03.png" alt=""/>
                 </div>
@@ -74,6 +127,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
         <div class="banner-third">
@@ -103,10 +157,12 @@
                         <div class="had">免费注册</div>
                         <div class="fot">您现在就可以免费注册腾讯社交广告账户每次单笔充值仅需1000元，价格低廉</div>
                     </li>
+                    <div class="zhanwei"></div>
                     <li>
                         <div class="had">成本可控</div>
                         <div class="fot">您可以为广告账户或者计划设置日预算随时编辑预算或停止投放广告，我们的系统会立即为您执行</div>
                     </li>
+                    <div class="zhanwei"></div>
                     <li>
                         <div class="had">多种计费模式</div>
                         <div class="fot">根据不同推广目标提供更为合理的计费模式，包括CPC、CPM和CPA。为您提供效果自动优化，持续提高广告的效率和产出</div>
@@ -153,19 +209,24 @@
                 <form name=”form” method=”post” action=”#">
                     <div class="column space">
                         <div class="comp">
-                            <input  placeholder="企业名称（必填）"/>
+                            <input type="text"  placeholder="企业名称（必填）" required/>
                         </div>
+                        <div class="zhanwei"></div>
                         <div class="name">
-                            <input  placeholder="姓名（必填）"/>
+                            <input type="text"  placeholder="姓名（必填）" required/>
                         </div>
                     </div>
                     <div class="column">
                         <div class="telephone">
-                            <input  placeholder="手机（必填）"/>
+                            <input type="tel"  placeholder="手机（必填）" required/>
                         </div>
+                        <div class="zhanwei"></div>
                         <div class="eml">
-                            <input  placeholder="邮箱"/>
+                            <input type="email"  placeholder="邮箱" required/>
                         </div>
+                    </div>
+                    <div class="column-last">
+                        <input type="submit" value="预约顾问资讯"/>
                     </div>
                 </form>
             </div>
@@ -173,18 +234,18 @@
     </div>
 <!--表单注册结束-->
 <!--footer开始-->
-    <div class="footer">
+    <div class="footer min-hide">
         <div class="footer-w w">
             <div class="list">
                 <div class="advert">
                     <dl>
                         <dt>广告资源</dt>
-                        <dl>QQ空间广告</dl>
-                        <dl>QQ客户端广告</dl>
-                        <dl>微信广告</dl>
-                        <dl>腾讯联盟广告</dl>
-                        <dl>应用宝广告</dl>
-                        <dl>手机QQ浏览器广告</dl>
+                        <dd>QQ空间广告</dd>
+                        <dd>QQ客户端广告</dd>
+                        <dd>微信广告</dd>
+                        <dd>腾讯联盟广告</dd>
+                        <dd>应用宝广告</dd>
+                        <dd>手机QQ浏览器广告</dd>
                     </dl>
                 </div>
                 <div class="konwMore">
@@ -213,3 +274,5 @@
 </body>
 </html>
 <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="vendors/bootstrap.min.js"></script>
+<script src="src/index.js"></script>
