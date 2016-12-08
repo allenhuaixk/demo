@@ -1,4 +1,4 @@
-/*ͷ����ʼ*/
+/*头部开始*/
 .header {
   border-bottom: 1px solid #eaeaea;
 }
@@ -55,11 +55,18 @@
   border: 0px;
   border-radius: 3%;
 }
-/*ͷ������*/
-/*banner��ʼ*/
+/*头部结束*/
+/*banner开始*/
+.banner {
+  /*轮播banner开始*/
+  /*轮播banner结束*/
+}
+.banner .banner-list {
+  background-color: #fff;
+}
 .banner .banner-list .banner-list-w {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 .banner .banner-list .banner-list-w ul {
@@ -69,59 +76,59 @@
   margin-bottom: 0px;
 }
 .banner .banner-list .banner-list-w ul li {
-  padding: 25px 0px 21px;
   margin-right: 38px;
+}
+.banner .banner-list .banner-list-w ul li a {
+  display: block;
+  width: 100%;
+  height: 72px;
+  line-height: 72px;
+  box-sizing: border-box;
+}
+.banner .banner-list .banner-list-w ul li a:hover {
   border-bottom: 4px solid #008de8;
+  transition: all 0.3s;
+}
+.banner .banner-list .banner-list-w .logo {
+  margin-right: 38px;
+  display: none;
+}
+.banner .banner-list .banner-list-w .logo img {
+  width: 91px;
+  height: 50px;
+}
+.banner .banner-list .banner-list-w .phoneNumber .number {
+  display: flex;
+  align-items: center;
+}
+.banner .banner-list .banner-list-w .phoneNumber .number span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('../images/icon_phonecall_orange.png') no-repeat center;
+  background-size: 100%;
+  margin-right: 15px;
+}
+.banner .banner-list .banner-list-w .phoneNumber .number a {
+  color: #ff5500;
 }
 .banner .banner-first {
-  position: relative;
+  background: url("../images/banner_02.png") no-repeat center;
 }
-.banner .banner-first .bg_1 {
-  background: url("../images/banner_bg_1.png") no-repeat center;
-  width: 100%;
-  height: 614px;
+.banner .banner-first .banner-first-w {
+  padding: 130px 0px 220px;
 }
-.banner .banner-first .bg_2 {
-  background: url("../images/banner_bg_1.png") no-repeat center;
-  width: 100%;
-  height: 614px;
-}
-.banner .banner-first .banner-first-bg {
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 614px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0px;
-}
-.banner .banner-first .banner-first-bg .banner-first-w {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.banner .banner-first .banner-first-bg .banner-first-w .content {
-  width: 400px;
-  height: 300px;
-  background-color: rgba(130, 144, 160, 0.68);
+.banner .banner-first .banner-first-w .title {
   color: #fff;
-  text-align: center;
-  padding: 47px 0px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
-.banner .banner-first .banner-first-bg .banner-first-w .content h3 {
-  font-size: 34px;
+.banner .banner-first .banner-first-w .title h3 {
+  font-size: 60px;
+  line-height: 90px;
+  margin-bottom: 30px;
 }
-.banner .banner-first .banner-first-bg .banner-first-w .content p {
-  font-size: 16px;
-  line-height: 24px;
-}
-.banner .banner-first .banner-first-bg .banner-first-w .content span {
+.banner .banner-first .banner-first-w .title p {
   font-size: 20px;
+  line-height: 38px;
 }
 .banner .banner-second .banner-second-w {
   display: flex;
@@ -133,7 +140,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 103px;
   margin-top: 42px;
 }
 .banner .banner-second .banner-second-w .content {
@@ -163,6 +169,7 @@
 }
 .banner .banner-third {
   background: url("../images/banner_bg_2.png") no-repeat center;
+  background-size: 100% 100%;
 }
 .banner .banner-third .banner-third-w {
   padding: 134px 0px 213px;
@@ -189,8 +196,8 @@
 .banner .banner-third .banner-third-w .stance {
   flex: 2.5;
 }
-/*banner����*/
-/*��ҳ�濪ʼ*/
+/*banner结束*/
+/*主页面开始*/
 .main {
   background-color: #f2f2f2;
 }
@@ -279,54 +286,66 @@
   border: 1px solid #008de8;
   font-size: 20px;
 }
-/*��ҳ������*/
-/*����ע�Ὺʼ*/
+/*主页面结束*/
+/*表单注册开始*/
 .register {
   background-color: #eaeaea;
 }
 .register .register-w {
-  text-align: center;
-  padding-top: 110px;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0px;
+}
+.register .register-w .register-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.register .register-w .register-left .content .content-top {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.register .register-w .content .title {
+.register .register-w .register-left .content .content-top .title {
   font-size: 30px;
   line-height: 45px;
 }
-.register .register-w .content p {
+.register .register-w .register-left .content .content-top p {
   color: #999;
 }
-.register .register-w .submit {
-  margin-top: 40px;
-  padding: 0px 155px;
-}
-.register .register-w .submit form {
+.register .register-w .register-left .content .content-bottom {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  margin-bottom: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  width: 100%;
 }
-.register .register-w .submit form .column {
-  flex-basis: 100%;
-  display: flex;
-  justify-content: space-between;
+.register .register-w .register-left .content .content-bottom ul {
+  width: 100%;
+}
+.register .register-w .register-left .content .content-bottom ul li {
+  width: 100%;
   position: relative;
 }
-.register .register-w .submit form .column input {
-  width: 418px;
-  height: 46px;
-  border: 1px solid #c9caca;
-  padding-left: 56px;
+.register .register-w .register-left .content .content-bottom ul li input {
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding-left: 48px;
 }
-.register .register-w .submit form .column .zhanwei {
-  padding: 0px 20px;
+.register .register-w .register-left .content .content-bottom ul li .checkbox {
+  padding: 12px 0px;
 }
-.register .register-w .submit form .column .comp {
-  position: relative;
+.register .register-w .register-left .content .content-bottom ul li .checkbox input {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 12px;
 }
-.register .register-w .submit form .column .comp::before {
+.register .register-w .register-left .content .content-bottom ul .company::before {
   display: block;
   content: '';
   position: absolute;
@@ -337,10 +356,10 @@
   top: 12px;
   left: 12px;
 }
-.register .register-w .submit form .column .name {
-  position: relative;
+.register .register-w .register-left .content .content-bottom ul .name {
+  margin-bottom: 30px;
 }
-.register .register-w .submit form .column .name::before {
+.register .register-w .register-left .content .content-bottom ul .name::before {
   display: block;
   content: '';
   position: absolute;
@@ -351,10 +370,10 @@
   top: 12px;
   left: 12px;
 }
-.register .register-w .submit form .column .telephone {
-  position: relative;
+.register .register-w .register-left .content .content-bottom ul .tel {
+  margin-bottom: 30px;
 }
-.register .register-w .submit form .column .telephone::before {
+.register .register-w .register-left .content .content-bottom ul .tel::before {
   display: block;
   content: '';
   position: absolute;
@@ -365,10 +384,10 @@
   top: 12px;
   left: 12px;
 }
-.register .register-w .submit form .column .eml {
-  position: relative;
+.register .register-w .register-left .content .content-bottom ul .eml {
+  margin-bottom: 30px;
 }
-.register .register-w .submit form .column .eml::before {
+.register .register-w .register-left .content .content-bottom ul .eml::before {
   display: block;
   content: '';
   position: absolute;
@@ -379,26 +398,51 @@
   top: 12px;
   left: 12px;
 }
-.register .register-w .submit form .column-last {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 44px;
-}
-.register .register-w .submit form .column-last input {
-  width: 508px;
-  height: 56px;
-  border: 1px solid #008de8;
+.register .register-w .register-left .content .content-bottom .btn-sub input {
+  height: 59px;
+  box-sizing: border-box;
+  padding: 0px 60px;
+  background-color: #eaeaea;
   color: #008de8;
-  font-size: 18px;
-  background-color: #fff;
+  border: 1px solid #008de8;
+  font-size: 20px;
 }
-.register .register-w .submit form .space {
-  margin-bottom: 44px;
+.register .register-w .register-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  margin-left: 20px;
 }
-/*����ע������*/
-/*footer��ʼ*/
+.register .register-w .register-right .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register .register-w .register-right .content h3 {
+  font-size: 30px;
+  line-height: 45px;
+}
+.register .register-w .register-right .content p {
+  color: #999;
+  margin-bottom: 45px;
+}
+.register .register-w .register-right .content i {
+  display: inline-block;
+  margin-top: 25px;
+  width: 80px;
+  height: 82px;
+  background: url("../images/icon-phone_02.png") no-repeat center;
+  background-size: 100%;
+}
+.register .register-w .register-right .content .dianhua {
+  font-size: 42px;
+  color: #008de8;
+  font-weight: 700;
+  margin: 20px 0;
+}
+/*表单注册结束*/
+/*footer开始*/
 .footer {
   background-color: #282828;
 }
@@ -427,25 +471,25 @@
   color: #5f5f5f;
   padding: 20px 0px;
 }
-/*footer����*/
-/*�����ֻ���ý����ѯ��ʼ*/
-@media (min-width: 768px) and (max-width: 1079px) {
+/*footer结束*/
+/*适配手机的媒体查询开始*/
+@media (min-width: 769px) and (max-width: 1079px) {
   html {
     font-size: 25px!important;
   }
-  /*���ĸ���*/
+  /*版心更改*/
   .w {
     width: 750px;
     margin: 0 auto;
   }
-  /*С��Ļ��ʾ�����ط���*/
+  /*小屏幕显示及隐藏方法*/
   .min-show {
     display: block !important;
   }
   .min-hide {
     display: none !important;
   }
-  /*ͷ����ʼ*/
+  /*头部开始*/
   .header .header-w {
     display: flex;
     justify-content: space-between;
@@ -481,19 +525,39 @@
     background: url("../images/icon_list.png") no-repeat center;
     background-size: 100%;
   }
-  /*ͷ������*/
-  /*banner���ֿ�ʼ*/
+  /*头部结束*/
+  /*banner部分开始*/
+  .banner .banner-first {
+    height: 18.16666667rem;
+  }
+  .banner .banner-first .banner-first-w {
+    padding: 3rem 0rem;
+  }
+  .banner .banner-first .banner-first-w .title h3 {
+    font-size: 1.13333333rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.93333333rem;
+  }
+  .banner .banner-first .banner-first-w .title p {
+    font-size: 0.53333333rem;
+    line-height: 1.26666667rem;
+  }
   .banner .banner-second .banner-second-w {
     display: flex;
     flex-direction: column-reverse;
     padding: 3rem 0rem;
   }
   .banner .banner-second .banner-second-w .content .title h3 {
+    font-size: 1.13333333rem;
     line-height: 2.4rem;
     margin-bottom: 0.93333333rem;
   }
   .banner .banner-second .banner-second-w .content .describe p {
+    font-size: 0.53333333rem;
     line-height: 1.26666667rem;
+  }
+  .banner .banner-second .banner-second-w .pic {
+    justify-content: center;
   }
   .banner .banner-third .banner-third-w {
     padding: 3rem 0rem;
@@ -503,22 +567,25 @@
     flex: 1;
   }
   .banner .banner-third .banner-third-w .content h3 {
+    font-size: 1.13333333rem;
     line-height: 2.4rem;
   }
   .banner .banner-third .banner-third-w .content p {
     line-height: 1.26666667rem;
+    font-size: 0.53333333rem;
   }
   .banner .banner-third .banner-third-w .stance {
     flex: 1;
   }
-  /*banner���ֽ���*/
-  /*��ҳ���ֿ�ʼ*/
+  /*banner部分结束*/
+  /*主页部分开始*/
   .main .main-w {
     display: flex;
     flex-direction: column;
     padding: 3rem 0rem;
   }
   .main .main-w .title h3 {
+    font-size: 1.13333333rem;
     line-height: 2.4rem;
   }
   .main .main-w .list ul {
@@ -544,120 +611,73 @@
   .lastFool .lastFool-w .content .img img {
     margin: 0rem;
   }
-  /*��ҳ���ֽ���*/
-  /*����ע�Ჿ�ֿ�ʼ*/
+  .lastFool .lastFool-w .content .img .text span {
+    font-size: 0.53333333rem;
+  }
+  .lastFool .lastFool-w .content .img .text h3 {
+    font-size: 1.13333333rem;
+  }
+  .lastFool .lastFool-w .content .img .text input {
+    font-size: 0.66666667rem;
+  }
+  .lastFool .lastFool-w .title {
+    font-size: 1.13333333rem;
+  }
+  /*主页部分结束*/
+  /*表单注册部分开始*/
   .register .register-w {
     display: flex;
     flex-direction: column;
     padding: 3rem 0rem;
   }
-  .register .register-w .content .title {
-    line-height: 2.4rem;
-  }
-  .register .register-w .content p {
-    line-height: 1.26666667rem;
-  }
-  .register .register-w .submit {
-    padding: 0rem;
-  }
-  .register .register-w .submit form {
+  .register .register-w .register-left {
     display: flex;
-    flex-direction: column;
-    margin: 0rem;
+    justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 3rem;
   }
-  .register .register-w .submit form .column {
+  .register .register-w .register-right {
     display: flex;
-    flex-direction: column;
-    margin: 0rem;
+    justify-content: center;
+    margin-left: 0px;
   }
-  .register .register-w .submit form .column input {
-    height: 3rem;
-    width: 21.33333333rem;
-    font-size: 0.66666667rem;
-    padding-left: 3.8rem;
+  /*表单注册部分结束*/
+  /*footer部分开始*/
+  .min-footer {
+    background-color: #5b5b5b;
   }
-  .register .register-w .submit form .column .comp {
-    margin-bottom: 3rem;
+  .min-footer .footer-min-content {
+    padding: 0.86666667rem 0rem;
   }
-  .register .register-w .submit form .column .comp::before {
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: 666;
-    width: 2rem;
-    height: 2rem;
-    background: url("../images/comp_phone_03.png") no-repeat center;
-    top: 12px;
-    left: 17px;
+  .min-footer .footer-min-content p {
+    color: #fff;
+    font-size: 0.53333333rem;
+    line-height: 1.2rem;
   }
-  .register .register-w .submit form .column .name {
-    margin-bottom: 3rem;
-  }
-  .register .register-w .submit form .column .name::before {
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: 666;
-    width: 2.66666667rem;
-    height: 2.66666667rem;
-    background: url("../images/people_phone_06.png") no-repeat center;
-    top: 4px;
-    left: 12px;
-  }
-  .register .register-w .submit form .column .telephone {
-    margin-bottom: 3rem;
-  }
-  .register .register-w .submit form .column .telephone::before {
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: 666;
-    width: 2.66666667rem;
-    height: 2.66666667rem;
-    background: url("../images/phone_phone_08.png") no-repeat center;
-    top: 4px;
-    left: 12px;
-  }
-  .register .register-w .submit form .column .eml {
-    margin-bottom: 3rem;
-  }
-  .register .register-w .submit form .column .eml::before {
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: 666;
-    width: 2.66666667rem;
-    height: 2.66666667rem;
-    background: url("../images/eml_phone_10.png") no-repeat center;
-    top: 4px;
-    left: 12px;
-  }
-  .register .register-w .submit form .column-last {
-    margin: 0rem;
-  }
-  .register .register-w .submit form .column-last input {
-    width: 21.33333333rem;
-    height: 3.66666667rem;
-  }
-  /*����ע�Ჿ�ֽ���*/
+  /*footer部分结束*/
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  /*给img标签设置宽度100%*/
+  img {
+    width: 100%;
+  }
+  /*设置rem值*/
   html {
     font-size: 25px!important;
   }
-  /*���ĸ���*/
+  /*版心更改*/
   .w {
-    width: 90%;
+    width: 81%;
     margin: 0 auto;
   }
-  /*С��Ļ��ʾ�����ط���*/
+  /*小屏幕显示及隐藏方法*/
   .min-show {
     display: block !important;
   }
   .min-hide {
     display: none !important;
   }
-  /*ͷ����ʼ*/
+  /*头部开始*/
   .header .header-w {
     display: flex;
     justify-content: space-between;
@@ -693,19 +713,39 @@
     background: url("../images/icon_list.png") no-repeat center;
     background-size: 100%;
   }
-  /*ͷ������*/
-  /*banner���ֿ�ʼ*/
+  /*头部结束*/
+  /*banner部分开始*/
+  .banner .banner-first {
+    background-size: 100% 100%;
+  }
+  .banner .banner-first .banner-first-w {
+    padding: 3rem 0rem;
+  }
+  .banner .banner-first .banner-first-w .title h3 {
+    font-size: 1.13333333rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.93333333rem;
+  }
+  .banner .banner-first .banner-first-w .title p {
+    font-size: 0.53333333rem;
+    line-height: 1.26666667rem;
+  }
   .banner .banner-second .banner-second-w {
     display: flex;
     flex-direction: column-reverse;
     padding: 3rem 0rem;
   }
   .banner .banner-second .banner-second-w .content .title h3 {
+    font-size: 1.13333333rem;
     line-height: 2.4rem;
     margin-bottom: 0.93333333rem;
   }
   .banner .banner-second .banner-second-w .content .describe p {
+    font-size: 0.53333333rem;
     line-height: 1.26666667rem;
+  }
+  .banner .banner-second .banner-second-w .pic {
+    justify-content: center;
   }
   .banner .banner-third .banner-third-w {
     padding: 3rem 0rem;
@@ -715,22 +755,25 @@
     flex: 1;
   }
   .banner .banner-third .banner-third-w .content h3 {
+    font-size: 1.13333333rem;
     line-height: 2.4rem;
   }
   .banner .banner-third .banner-third-w .content p {
     line-height: 1.26666667rem;
+    font-size: 0.53333333rem;
   }
   .banner .banner-third .banner-third-w .stance {
     flex: 1;
   }
-  /*banner���ֽ���*/
-  /*��ҳ���ֿ�ʼ*/
+  /*banner部分结束*/
+  /*主页部分开始*/
   .main .main-w {
     display: flex;
     flex-direction: column;
     padding: 3rem 0rem;
   }
   .main .main-w .title h3 {
+    font-size: 1.13333333rem;
     line-height: 2.4rem;
   }
   .main .main-w .list ul {
@@ -756,101 +799,48 @@
   .lastFool .lastFool-w .content .img img {
     margin: 0rem;
   }
-  /*��ҳ���ֽ���*/
-  /*����ע�Ჿ�ֿ�ʼ*/
+  .lastFool .lastFool-w .content .img .text span {
+    font-size: 0.53333333rem;
+  }
+  .lastFool .lastFool-w .content .img .text h3 {
+    font-size: 1.13333333rem;
+  }
+  .lastFool .lastFool-w .content .img .text input {
+    font-size: 0.66666667rem;
+  }
+  .lastFool .lastFool-w .title {
+    font-size: 1.13333333rem;
+  }
+  /*主页部分结束*/
+  /*表单注册部分开始*/
   .register .register-w {
     display: flex;
     flex-direction: column;
     padding: 3rem 0rem;
   }
-  .register .register-w .content .title {
-    line-height: 2.4rem;
-  }
-  .register .register-w .content p {
-    line-height: 1.26666667rem;
-  }
-  .register .register-w .submit {
-    padding: 0rem;
-    width: 100%;
-  }
-  .register .register-w .submit form {
+  .register .register-w .register-left {
     display: flex;
-    flex-direction: column;
-    margin: 0rem;
+    justify-content: center;
+    margin-right: 0px;
+    margin-bottom: 3rem;
   }
-  .register .register-w .submit form .column {
+  .register .register-w .register-right {
     display: flex;
-    flex-direction: column;
-    margin: 0rem;
+    justify-content: center;
+    margin-left: 0px;
   }
-  .register .register-w .submit form .column input {
-    height: 3rem;
-    width: 100%;
-    font-size: 0.66666667rem;
-    padding-left: 3.8rem;
+  /*表单注册部分结束*/
+  /*footer部分开始*/
+  .min-footer {
+    background-color: #5b5b5b;
   }
-  .register .register-w .submit form .column .comp {
-    margin-bottom: 3rem;
+  .min-footer .footer-min-content {
+    padding: 0.86666667rem 0rem;
   }
-  .register .register-w .submit form .column .comp::before {
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: 666;
-    width: 2rem;
-    height: 2rem;
-    background: url("../images/comp_phone_03.png") no-repeat center;
-    top: 12px;
-    left: 17px;
+  .min-footer .footer-min-content p {
+    color: #fff;
+    font-size: 0.53333333rem;
+    line-height: 1.2rem;
   }
-  .register .register-w .submit form .column .name {
-    margin-bottom: 3rem;
-  }
-  .register .register-w .submit form .column .name::before {
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: 666;
-    width: 2.66666667rem;
-    height: 2.66666667rem;
-    background: url("../images/people_phone_06.png") no-repeat center;
-    top: 4px;
-    left: 12px;
-  }
-  .register .register-w .submit form .column .telephone {
-    margin-bottom: 3rem;
-  }
-  .register .register-w .submit form .column .telephone::before {
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: 666;
-    width: 2.66666667rem;
-    height: 2.66666667rem;
-    background: url("../images/phone_phone_08.png") no-repeat center;
-    top: 4px;
-    left: 12px;
-  }
-  .register .register-w .submit form .column .eml {
-    margin-bottom: 3rem;
-  }
-  .register .register-w .submit form .column .eml::before {
-    display: block;
-    content: '';
-    position: absolute;
-    z-index: 666;
-    width: 2.66666667rem;
-    height: 2.66666667rem;
-    background: url("../images/eml_phone_10.png") no-repeat center;
-    top: 4px;
-    left: 12px;
-  }
-  .register .register-w .submit form .column-last {
-    margin: 0rem;
-  }
-  .register .register-w .submit form .column-last input {
-    width: 100%;
-    height: 3.66666667rem;
-  }
-  /*����ע�Ჿ�ֽ���*/
+  /*footer部分结束*/
 }

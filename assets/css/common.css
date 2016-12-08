@@ -1,9 +1,9 @@
-/*����*/
+/*版心*/
 .w {
   margin: 0 auto;
   width: 1190px;
 }
-/*��������*/
+/*清除浮动*/
 .clearfix:after {
   content: ".";
   display: block;
@@ -14,29 +14,25 @@
 .clearfix {
   *zoom: 1;
 }
-/*ѡ��������ɫ*/
+/*选中字体颜色*/
 .font-current {
   color: #008de8;
 }
-/*�����ֲ���ť������ʽ*/
+/*更改轮播按钮点击样式*/
 .glyphicon-chevron-left:before {
   content: '<' !important;
 }
 .glyphicon-chevron-right:before {
   content: '>' !important;
 }
-/*��img��ǩ���ÿ���100%*/
-img {
-  width: 100%;
-}
-/*ý����ѯ*/
-/*����Ļ����1226ʱ*/
+/*媒体查询*/
+/*当屏幕大于1226时*/
 @media (min-width: 1226px) {
   .w {
     width: 1190px;
     margin: 0 auto;
   }
-  /*����Ļ��ʾ������*/
+  /*大屏幕显示及隐藏*/
   .max-hide {
     display: none!important;
   }
@@ -44,13 +40,13 @@ img {
     display: block!important;
   }
 }
-/*����Ļ��1081��1199ʱ��Ч��*/
+/*当屏幕在1081到1199时的效果*/
 @media (min-width: 1080px) and (max-width: 1225px) {
   .w {
     width: 992px;
     margin: 0 auto;
   }
-  /*����Ļ��ʾ������*/
+  /*大屏幕显示及隐藏*/
   .max-hide {
     display: none!important;
   }
@@ -58,7 +54,7 @@ img {
     display: block!important;
   }
 }
-/*������Ļ������*/
+/*其他屏幕的适配*/
 @media only screen and (width: 320px) {
   html,
   body {
