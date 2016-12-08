@@ -11,5 +11,5 @@ echo 'starting upload the dist folder'
 cp -rf ./dist/* ../yinghegou-dist/
 
 
-cd ../yuanzimao-dist
-sh upload.sh
+cd ../yinghegou-dist
+sh releash.sh
