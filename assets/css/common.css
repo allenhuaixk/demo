@@ -25,11 +25,15 @@
 .glyphicon-chevron-right:before {
   content: '>' !important;
 }
+/*��img��ǩ���ÿ���100%*/
+img {
+  width: 100%;
+}
 /*ý����ѯ*/
 /*����Ļ����1226ʱ*/
 @media (min-width: 1226px) {
   .w {
-    width: 1200px;
+    width: 1190px;
     margin: 0 auto;
   }
   /*����Ļ��ʾ������*/

@@ -429,3 +429,428 @@
 }
 /*footer����*/
 /*�����ֻ���ý����ѯ��ʼ*/
+@media (min-width: 768px) and (max-width: 1079px) {
+  html {
+    font-size: 25px!important;
+  }
+  /*���ĸ���*/
+  .w {
+    width: 750px;
+    margin: 0 auto;
+  }
+  /*С��Ļ��ʾ�����ط���*/
+  .min-show {
+    display: block !important;
+  }
+  .min-hide {
+    display: none !important;
+  }
+  /*ͷ����ʼ*/
+  .header .header-w {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem;
+  }
+  .header .header-w .min-left .logo img {
+    width: 3.03333333rem;
+    height: 1.66666667rem;
+  }
+  .header .header-w .min-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .header-w .min-right .header-call a {
+    display: inline-block;
+    width: 1.66666667rem;
+    height: 1.66666667rem;
+    background: url("../images/icon_phonecall.png") no-repeat center;
+    background-size: 100%;
+  }
+  .header .header-w .min-right .line {
+    width: 0.06666667rem;
+    height: 1.46666667rem;
+    background-color: #9f9f9f;
+    margin: 0rem 1.03333333rem;
+  }
+  .header .header-w .min-right .header-menu {
+    display: inline-block;
+    width: 1.66666667rem;
+    height: 1.66666667rem;
+    background: url("../images/icon_list.png") no-repeat center;
+    background-size: 100%;
+  }
+  /*ͷ������*/
+  /*banner���ֿ�ʼ*/
+  .banner .banner-second .banner-second-w {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem 0rem;
+  }
+  .banner .banner-second .banner-second-w .content .title h3 {
+    line-height: 2.4rem;
+    margin-bottom: 0.93333333rem;
+  }
+  .banner .banner-second .banner-second-w .content .describe p {
+    line-height: 1.26666667rem;
+  }
+  .banner .banner-third .banner-third-w {
+    padding: 3rem 0rem;
+    display: flex;
+  }
+  .banner .banner-third .banner-third-w .content {
+    flex: 1;
+  }
+  .banner .banner-third .banner-third-w .content h3 {
+    line-height: 2.4rem;
+  }
+  .banner .banner-third .banner-third-w .content p {
+    line-height: 1.26666667rem;
+  }
+  .banner .banner-third .banner-third-w .stance {
+    flex: 1;
+  }
+  /*banner���ֽ���*/
+  /*��ҳ���ֿ�ʼ*/
+  .main .main-w {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem;
+  }
+  .main .main-w .title h3 {
+    line-height: 2.4rem;
+  }
+  .main .main-w .list ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .main-w .list ul li {
+    flex: 39;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .lastFool .lastFool-w {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem;
+  }
+  .lastFool .lastFool-w .content .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .lastFool .lastFool-w .content .img img {
+    margin: 0rem;
+  }
+  /*��ҳ���ֽ���*/
+  /*����ע�Ჿ�ֿ�ʼ*/
+  .register .register-w {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem;
+  }
+  .register .register-w .content .title {
+    line-height: 2.4rem;
+  }
+  .register .register-w .content p {
+    line-height: 1.26666667rem;
+  }
+  .register .register-w .submit {
+    padding: 0rem;
+  }
+  .register .register-w .submit form {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+  }
+  .register .register-w .submit form .column {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+  }
+  .register .register-w .submit form .column input {
+    height: 3rem;
+    width: 21.33333333rem;
+    font-size: 0.66666667rem;
+    padding-left: 3.8rem;
+  }
+  .register .register-w .submit form .column .comp {
+    margin-bottom: 3rem;
+  }
+  .register .register-w .submit form .column .comp::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 666;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/comp_phone_03.png") no-repeat center;
+    top: 12px;
+    left: 17px;
+  }
+  .register .register-w .submit form .column .name {
+    margin-bottom: 3rem;
+  }
+  .register .register-w .submit form .column .name::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 666;
+    width: 2.66666667rem;
+    height: 2.66666667rem;
+    background: url("../images/people_phone_06.png") no-repeat center;
+    top: 4px;
+    left: 12px;
+  }
+  .register .register-w .submit form .column .telephone {
+    margin-bottom: 3rem;
+  }
+  .register .register-w .submit form .column .telephone::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 666;
+    width: 2.66666667rem;
+    height: 2.66666667rem;
+    background: url("../images/phone_phone_08.png") no-repeat center;
+    top: 4px;
+    left: 12px;
+  }
+  .register .register-w .submit form .column .eml {
+    margin-bottom: 3rem;
+  }
+  .register .register-w .submit form .column .eml::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 666;
+    width: 2.66666667rem;
+    height: 2.66666667rem;
+    background: url("../images/eml_phone_10.png") no-repeat center;
+    top: 4px;
+    left: 12px;
+  }
+  .register .register-w .submit form .column-last {
+    margin: 0rem;
+  }
+  .register .register-w .submit form .column-last input {
+    width: 21.33333333rem;
+    height: 3.66666667rem;
+  }
+  /*����ע�Ჿ�ֽ���*/
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 25px!important;
+  }
+  /*���ĸ���*/
+  .w {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /*С��Ļ��ʾ�����ط���*/
+  .min-show {
+    display: block !important;
+  }
+  .min-hide {
+    display: none !important;
+  }
+  /*ͷ����ʼ*/
+  .header .header-w {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem;
+  }
+  .header .header-w .min-left .logo img {
+    width: 3.03333333rem;
+    height: 1.66666667rem;
+  }
+  .header .header-w .min-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .header-w .min-right .header-call a {
+    display: inline-block;
+    width: 1.66666667rem;
+    height: 1.66666667rem;
+    background: url("../images/icon_phonecall.png") no-repeat center;
+    background-size: 100%;
+  }
+  .header .header-w .min-right .line {
+    width: 0.06666667rem;
+    height: 1.46666667rem;
+    background-color: #9f9f9f;
+    margin: 0rem 1.03333333rem;
+  }
+  .header .header-w .min-right .header-menu {
+    display: inline-block;
+    width: 1.66666667rem;
+    height: 1.66666667rem;
+    background: url("../images/icon_list.png") no-repeat center;
+    background-size: 100%;
+  }
+  /*ͷ������*/
+  /*banner���ֿ�ʼ*/
+  .banner .banner-second .banner-second-w {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3rem 0rem;
+  }
+  .banner .banner-second .banner-second-w .content .title h3 {
+    line-height: 2.4rem;
+    margin-bottom: 0.93333333rem;
+  }
+  .banner .banner-second .banner-second-w .content .describe p {
+    line-height: 1.26666667rem;
+  }
+  .banner .banner-third .banner-third-w {
+    padding: 3rem 0rem;
+    display: flex;
+  }
+  .banner .banner-third .banner-third-w .content {
+    flex: 1;
+  }
+  .banner .banner-third .banner-third-w .content h3 {
+    line-height: 2.4rem;
+  }
+  .banner .banner-third .banner-third-w .content p {
+    line-height: 1.26666667rem;
+  }
+  .banner .banner-third .banner-third-w .stance {
+    flex: 1;
+  }
+  /*banner���ֽ���*/
+  /*��ҳ���ֿ�ʼ*/
+  .main .main-w {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem;
+  }
+  .main .main-w .title h3 {
+    line-height: 2.4rem;
+  }
+  .main .main-w .list ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .main-w .list ul li {
+    flex: 39;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .lastFool .lastFool-w {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem;
+  }
+  .lastFool .lastFool-w .content .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .lastFool .lastFool-w .content .img img {
+    margin: 0rem;
+  }
+  /*��ҳ���ֽ���*/
+  /*����ע�Ჿ�ֿ�ʼ*/
+  .register .register-w {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem;
+  }
+  .register .register-w .content .title {
+    line-height: 2.4rem;
+  }
+  .register .register-w .content p {
+    line-height: 1.26666667rem;
+  }
+  .register .register-w .submit {
+    padding: 0rem;
+    width: 100%;
+  }
+  .register .register-w .submit form {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+  }
+  .register .register-w .submit form .column {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+  }
+  .register .register-w .submit form .column input {
+    height: 3rem;
+    width: 100%;
+    font-size: 0.66666667rem;
+    padding-left: 3.8rem;
+  }
+  .register .register-w .submit form .column .comp {
+    margin-bottom: 3rem;
+  }
+  .register .register-w .submit form .column .comp::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 666;
+    width: 2rem;
+    height: 2rem;
+    background: url("../images/comp_phone_03.png") no-repeat center;
+    top: 12px;
+    left: 17px;
+  }
+  .register .register-w .submit form .column .name {
+    margin-bottom: 3rem;
+  }
+  .register .register-w .submit form .column .name::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 666;
+    width: 2.66666667rem;
+    height: 2.66666667rem;
+    background: url("../images/people_phone_06.png") no-repeat center;
+    top: 4px;
+    left: 12px;
+  }
+  .register .register-w .submit form .column .telephone {
+    margin-bottom: 3rem;
+  }
+  .register .register-w .submit form .column .telephone::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 666;
+    width: 2.66666667rem;
+    height: 2.66666667rem;
+    background: url("../images/phone_phone_08.png") no-repeat center;
+    top: 4px;
+    left: 12px;
+  }
+  .register .register-w .submit form .column .eml {
+    margin-bottom: 3rem;
+  }
+  .register .register-w .submit form .column .eml::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 666;
+    width: 2.66666667rem;
+    height: 2.66666667rem;
+    background: url("../images/eml_phone_10.png") no-repeat center;
+    top: 4px;
+    left: 12px;
+  }
+  .register .register-w .submit form .column-last {
+    margin: 0rem;
+  }
+  .register .register-w .submit form .column-last input {
+    width: 100%;
+    height: 3.66666667rem;
+  }
+  /*����ע�Ჿ�ֽ���*/
+}
